@@ -19,7 +19,7 @@ object PanelV2 {
 
 
   def display(num : Int) : String = panelRows.map { row =>
-      String.valueOf(num).map {digit => digits(digit.toString.toInt)(row)} mkString " "
+      num.toString.map {digit => digits(digit.getNumericValue)(row)} mkString " "
     } mkString "\n"
 
 
