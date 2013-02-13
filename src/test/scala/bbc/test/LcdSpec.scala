@@ -78,7 +78,7 @@ class LcdSpec extends SpecificationWithJUnit{
   }
 
   trait panel extends Scope {
-    val panel = new Panel
+    val panel = new PanelTwo
   }
 
 

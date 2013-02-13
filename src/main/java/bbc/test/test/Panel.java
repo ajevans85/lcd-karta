@@ -10,7 +10,6 @@ package bbc.test.test;
 public class Panel {
 
 
-
     private static final String[][] digits = new String[10][3];
 
     {
