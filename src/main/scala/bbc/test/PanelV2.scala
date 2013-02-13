@@ -1,6 +1,6 @@
 package bbc.test
 
-class PanelTwo {
+object PanelV2 {
 
   val digits =
     Seq("._." , "|.|" , "|_|") ::

@@ -1,4 +1,4 @@
-package bbc.test.test;
+package bbc.test;
 
 /**
  * Created with IntelliJ IDEA.
