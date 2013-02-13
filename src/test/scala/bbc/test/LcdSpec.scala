@@ -17,13 +17,13 @@ class LcdSpec extends SpecificationWithJUnit{
              "..|\n" +
              "..|"
 
-  val lcd2 = ".-.\n" +
-             ".-|\n" +
-             "|-."
+  val lcd2 = "._.\n" +
+             "._|\n" +
+             "|_."
 
-  val lcd3 = ".-.\n" +
-             ".-|\n" +
-             ".-|"
+  val lcd3 = "._.\n" +
+             "._|\n" +
+             "._|"
 
   val lcd4 = "...\n" +
              "|_|\n" +
@@ -36,6 +36,10 @@ class LcdSpec extends SpecificationWithJUnit{
   val lcd10 = "... ._.\n" +
               "..| |.|\n" +
               "..| |_|"
+
+  val lcd6789 = "._. ._. ._. ._.\n" +
+                "|_. ..| |_| |_|\n" +
+                "|_| ..| |_| ..|"
 
   "LCD Panel" should {
 
@@ -65,6 +69,10 @@ class LcdSpec extends SpecificationWithJUnit{
 
     "Should be able to display digit 10" in new panel {
       panel.display(10) must beEqualTo(lcd10)
+    }
+
+    "Should be able to display digit 6789" in new panel {
+      panel.display(6789) must beEqualTo(lcd6789)
     }
 
   }

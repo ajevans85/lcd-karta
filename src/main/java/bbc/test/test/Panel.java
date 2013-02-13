@@ -16,10 +16,14 @@ public class Panel {
     {
        digits[0] = new String[] {"._." , "|.|" , "|_|"};
        digits[1] = new String[] {"..." , "..|" , "..|"};
-       digits[2] = new String[] {".-." , ".-|" , "|-."};
-       digits[3] = new String[] {".-." , ".-|" , ".-|"};
+       digits[2] = new String[] {"._." , "._|" , "|_."};
+       digits[3] = new String[] {"._." , "._|" , "._|"};
        digits[4] = new String[] {"..." , "|_|" , "..|"};
        digits[5] = new String[] {"._." , "|_." , "._|"};
+       digits[6] = new String[] {"._." , "|_." , "|_|"};
+       digits[7] = new String[] {"._." , "..|" , "..|"};
+       digits[8] = new String[] {"._." , "|_|" , "|_|"};
+       digits[9] = new String[] {"._." , "|_|" , "..|"};
     }
 
     public String display(int digit) {
