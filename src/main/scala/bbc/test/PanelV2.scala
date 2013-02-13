@@ -15,8 +15,10 @@ class PanelTwo {
     Seq("._." , "|_|" , "..|") ::
     Nil
 
+  val panelRows = Seq(0, 1, 2)
 
-  def display(num : Int) : String = Seq(0, 1, 2).map { row =>
+
+  def display(num : Int) : String = panelRows.map { row =>
       String.valueOf(num).map {digit => digits(digit.toString.toInt)(row)} mkString " "
     } mkString "\n"
 
