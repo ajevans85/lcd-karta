@@ -68,7 +68,7 @@ class LcdSpec extends SpecificationWithJUnit{
       PanelV2.display(10) must beEqualTo(lcd10)
     }
 
-    "be able to display digit 6789" in {
+    "be able to display 6789" in {
       PanelV2.display(6789) must beEqualTo(lcd6789)
     }
 

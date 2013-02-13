@@ -2,7 +2,7 @@ package bbc.test
 
 object PanelV2 {
 
-  val digits =
+  private val digits =
     Seq("._." , "|.|" , "|_|") ::
     Seq("..." , "..|" , "..|") ::
     Seq("._." , "._|" , "|_.") ::
@@ -15,7 +15,8 @@ object PanelV2 {
     Seq("._." , "|_|" , "..|") ::
     Nil
 
-  val panelRows = Seq(0, 1, 2)
+
+  private val panelRows = Seq(0, 1, 2)
 
 
   def display(num : Int) : String = panelRows.map { row =>
