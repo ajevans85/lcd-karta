@@ -32,10 +32,10 @@ public class Panel {
         String result = "";
 
         for(int row = 0; row < 3; row++) {
-            for (int i=0; i< digitAsChars.length; i++) {
-                int num = Integer.parseInt(String.valueOf(digitAsChars[i]));
+            for (int col=0; col< digitAsChars.length; col++) {
+                int num = Integer.valueOf(String.valueOf(digitAsChars[col]));
                 result += digits[num][row];
-                if(i < digitAsChars.length-1) result += " " ;
+                if(col < digitAsChars.length-1) result += " " ;
             }
             if (row < 2) {
                 result += "\n";
@@ -45,4 +45,6 @@ public class Panel {
         return result;
 
     }
+
+
 }
